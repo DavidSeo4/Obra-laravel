@@ -1,0 +1,204 @@
+/* CSS LIMPO PARA INCREMENTAR EN LARAVEL */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Montserrat&display=swap');
+
+
+
+/* -------------------------PALETA DE CORES---------------------------------------------- */
+/* primary:#5694DB; AZUL GENÉRICO
+secondary:#f7d559;AMARILLO
+body-color: #333; GRIS OSCURO
+body-bg: #fff; BLANCO
+success: #7952b3; MORADO
+light: #5A7E99; AZUL DISTINTO*/
+/* -------------------------FIN COLORES PALETA---------------------------------------------- */
+
+* {
+  border-radius: 0rem;
+}
+
+
+/*
+Customización dos estilos
+*/
+
+@import "icon-list";
+
+
+/*  --------------------------------FONTES XENÉRICAS---------------------------- */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* ----------------------------------FIN FONTES DO ENCABEZADO E CONTIDOS------------------------------------- */
+
+/* -----------------------------------FORMULARIO LOGIN---------------------------------------------------------- */
+.form-signin {
+  width: 100%;
+  max-width: 31.25rem;
+  height: 21.875rem;
+  padding: .9375rem;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.form-floating {
+  margin-top: 1.5625rem;
+  width: 21.875rem;
+}
+
+.checkbox-recordame {
+  font-weight: 300;
+  font-size: medium;
+  margin-top: 1.875rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -0.0625rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#login-container {
+  background-color: #c1d8f0;
+  border-radius: .3125rem;
+  padding: 2.1875rem;
+}
+
+/* ----------------------------------------FIN FORMULARIO LOGIN-------------------------------------------------- */
+
+
+/* -----------------------------------------HEADER LOGIN--------------------------------------------------------- */
+
+.navbar {
+  height: 5rem;
+}
+
+/* -----------------------------------------FIN HEADER LOGIN--------------------------------------------------------- */
+/* -----------------------------------------MENÚ HAMBURGUESA-------------------------------------------------------- */
+.navbar-expand-lg {
+  height: 5%;
+  padding-bottom: 2%;
+  z-index: 5;
+}
+
+.container-fluid02 {
+  z-index: 5;
+  width: 100%;
+  padding: 1%;
+}
+
+/* ICONO HAMBURGUESA */
+.navbar-dark .navbar-toggler {
+  border: 0;
+  float: right;
+}
+
+/* ----------------------------------------- PECHE MENÚ HAMBURGUESA-------------------------------------------------------- */
+
+
+/* ----------------------------------------- NOSAS FICHAS TABS/COMÚN A PERSOAS E EMPRESAS--------------------------------- */
+
+
+/*
+TABS CON BOOTSTRAP
+*/
+/* QUEDAN COMENTADAS AS FUNCIÓN DE SASS */
+.nav-tabs {
+  /* border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color; */
+  /* COLOR CONTENEDOR TABS */
+  background-color: #efefef;
+}
+  .nav-link {
+    /* margin-bottom: -$nav-tabs-border-width; */
+    background: none;
+    /* border: $nav-tabs-border-width solid transparent;
+    @include border-top-radius($nav-tabs-border-radius); */
+  }
+
+  .nav-link ::hover ::focus {
+    /* border-color: $nav-tabs-link-hover-border-color; */
+    background-color: #f7d559;
+    /* Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link */
+    /* isolation: isolate; */
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    /* color: $nav-tabs-link-active-color; */
+    background-color: rgba(86, 148, 219, 0.6);
+    /* border-color: $nav-tabs-link-active-border-color; */
+  }
+
+/* COLOR DE FONDO DO FORMULARIO */
+.tab-content>.tab-pane.active {
+  background-color: rgba(86, 148, 219, 0.3);
+}
+
+
+/* ----------------------------------------- FIN FICHAS TABS/COMÚN A PERSOAS E EMPRESAS--------------------------------- */
+
+/* ------------------------------------------ PAXINACIÓN DAS TÁBOAS PERSOAS EMPRESAS------------------------------------------ */
+.pagination {
+  list-style-type: none;
+  padding: .625rem 0;
+  display: inline-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.pagination li {
+  box-sizing: border-box;
+  padding-right: .625rem;
+}
+
+.pagination li a {
+  box-sizing: border-box;
+  background-color: #e2e6e6;
+  padding: .5rem;
+  text-decoration: none;
+  font-size: .75rem;
+  font-weight: bold;
+  color: #616872;
+  border-radius: .25rem;
+}
+
+.pagination li a:hover {
+  background-color: #d4dada;
+}
+
+.pagination .next a,
+.pagination .prev a {
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.pagination .currentpage a {
+  background-color:#5694DB;
+  color: #fff;
+}
+
+.pagination .currentpage a:hover {
+  background-color: rgb(78, 157, 248);
+}
+
+/* ------------------------------------------ FIN PAXINACIÓN DAS TÁBOAS PERSOAS EMPRESAS------------------------------------------ */
+
+/* PAGINACION CON LARAVEL */
+
+.pagination li .page-item {
+    background-color:#040608;
+}
