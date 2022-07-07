@@ -16,9 +16,9 @@
     <div class="row g-0">
       <div class="col-md-6" style="background: center center url(/img/cies.jpg); min-height: 40vh; " >
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 tarjeta">
 
-        <div class="card-body align-middle p-5 mx-5">
+        <div class="card-body align-middle p-5 mx-5 ">
           <ul class="list-unstyled list-group mt-lg-3">
             <li class="list-group-item mb-2 border-0 text-nowrap lead inicio"><a class="mb-6 px-2 py-3 w-100 text-decoration-none" href="https://sede.vigo.org/portal-empregado/#/gestionLogin" target="_blank">
             <img class="bi m-1" height="32" src="/img/portal.png" alt="Portal do empregado">

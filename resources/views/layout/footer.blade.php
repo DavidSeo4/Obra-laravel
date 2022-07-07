@@ -3,7 +3,7 @@
     <hr>
     <div class="row align-middle px-2">
       <div class="col-md-6 text-center text-md-start">
-        <span class="text-info text-black">&copy; 2022 Servizo de Orientación Laboral</span>
+        <span class="text-info text-black">{{--&copy;--}} SOL</span>
       </div>
       <div class="col-md-6 text-center text-md-end">
         <ul class="list-unstyled d-inline-flex">

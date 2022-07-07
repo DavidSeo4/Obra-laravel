@@ -7,6 +7,8 @@
 <link rel="stylesheet" href={{ asset('css/style.css')}}>
 
 {{-- cualquier otra hoja de estilos se referencia aquí --}}
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
 {{-- para especificar en página --}}
 @yield('styles')

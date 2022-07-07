@@ -33,9 +33,15 @@
                 <a href="#" class="nav-link active" aria-current="true">Consultas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Saír</a>
+                <a class="nav-link " aria-current="page" href="#">Saír</a>
               </li>
             </ul>
+            <button class="switch" id="switch">
+                <span><i class="material-icons luna ">brightness_2</i>
+                </i></span>
+                <span><i class="material-icons sol">brightness_5</i>
+                </i></i></span>
+              </button>
 
             {{-- CAMPO DE BÚSQUEDA - COMPROBAR FUNCIONALIDAD --}}
             <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
