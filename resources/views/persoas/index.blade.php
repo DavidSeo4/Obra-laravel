@@ -9,7 +9,7 @@
     <div class="container mb-4">
         <nav class="navbar navbar-light my-4">
             <div class="container-fluid">
-                <h3 class="text-success w-25"><b>PERSOAS</b></h3>
+                <h3 class="text-primary w-25"><b>PERSOAS</b></h3>
 
                 <form class="d-flex" action="{{ route('persoas.index') }}" method="GET">
                     <!-- BOTÓN DE NOVA PERSOA - ruta de laravel-->
@@ -30,7 +30,7 @@
                         <input name="busqueda" class="form-control" type="text" placeholder="Búsqueda" aria-label="Search"
                             value={{ $busqueda }}>
                         <input type="submit" id="enviar" name="enviar" value="Buscar"
-                            class="btn btn-success text-white rounded-0">
+                            class="btn btn-primary text-white rounded-0">
                     </div>
                 </form>
             </div>
@@ -41,7 +41,7 @@
         <div id="tabla" class="row table-responsive">
             <table class="table table-striped table-hover">
                 <thead>
-                    <tr class="table-success">
+                    <tr class="table-primary">
                         <th class="text-nowrap">Nome</th>
                         <th class="text-nowrap">1º Apelido</th>
                         <th class="text-nowrap">2º Apelido</th>
@@ -97,12 +97,11 @@
                                     <form action="{{ route('persoas.destroy', $persoa->id) }}" method="POST">
                                         @csrf
                                         {{ method_field('DELETE') }}
-                                        {{-- <input type="submit" value="Eliminar"
-                                            onclick="return EliminarRegistro('Eliminar Persoa')"> --}}
+
                                         <button class="delete border-0 btn-link"
                                             onclick="return EliminarRegistro('Eliminar Persoa')">
                                             <svg xmlns="http://www.w3.org/2000/svg" alt="Eliminar rexistro" width="16"
-                                                height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                height="16" fill="currentColor" viewBox="0 0 16 16">
                                                 <path
                                                     d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                 <path fill-rule="evenodd"

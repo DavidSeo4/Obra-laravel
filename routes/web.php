@@ -1,30 +1,28 @@
 <?php
 
+// DEPENDENCIAS
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
+// LLAMADAS
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PersoasController;
 use App\Http\Controllers\EmpresasController;
-use Illuminate\Support\Facades\Route;
 
 /*
-|--------------------------------------------------------------------------
 | Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+|-----------------------------------------------------------------------------------------------
+| Here is where you can register web routes for your application. These routes are loaded by the
+| RouteServiceProvider within a group which contains the "web" middleware group.
 */
 
-// INDEX - PREVIO A HACER EL LOGIN
-// Route::get('/', function () {
-//     return view('index');
-// });
+// Route::get('/', function () { return view('index'); });
 
-// PRUEBA
+Auth::routes();
+
+// LOGIN e INICIO
+Route::view('/', 'auth.login');
 Route::get('/index', [HomeController::class, 'index'])->name('index');
-Route::get('/test', [HomeController::class, 'test'])->name('test');
-
 
 // RUTAS DE PERSOAS
 
@@ -64,3 +62,4 @@ Route::get('/empresas/{id}/show',  [EmpresasController::class, 'show'])->name('e
 
 // ELIMINAR UN REGISTRO - NO TIENE VISTA
 Route::delete('/empresas/{id}' ,[EmpresasController::class, 'destroy'])->name('empresas.destroy');
+

@@ -46,6 +46,14 @@ class PersoasController extends Controller
         $persoa = new Persoas($request->all());
         $persoa->save();
         return redirect()->action([PersoasController::class, 'index']);
+
+        // VALIDACIÓN DE FORMULARIOS (si hay un error no pasaría a la siguiente línea)
+        $request->validate([
+            'nome' => 'required|max:50',
+            'nif' => 'required',
+            'data_nacemento' => 'required|date',
+            // OTROS - sacar los required de los propios formularios?
+        ]);
     }
 
     /**
