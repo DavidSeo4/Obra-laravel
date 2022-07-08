@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger d-flex p-1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success d-flex p-1">
         <div class="container-fluid02">
           <!-- MENÚ HAMBURGUESA -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">

@@ -9,7 +9,7 @@
     <div class="container mb-4">
         <nav class="navbar navbar-light my-4">
             <div class="container-fluid">
-                <h3 class="text-danger w-25"><b>PERSOAS</b></h3>
+                <h3 class="text-success w-25"><b>PERSOAS</b></h3>
 
                 <form class="d-flex" action="{{ route('persoas.index') }}" method="GET">
                     <!-- BOTÓN DE NOVA PERSOA - ruta de laravel-->
@@ -30,7 +30,7 @@
                         <input name="busqueda" class="form-control" type="text" placeholder="Búsqueda" aria-label="Search"
                             value={{ $busqueda }}>
                         <input type="submit" id="enviar" name="enviar" value="Buscar"
-                            class="btn btn-danger text-white rounded-0">
+                            class="btn btn-success text-white rounded-0">
                     </div>
                 </form>
             </div>
@@ -41,7 +41,7 @@
         <div id="tabla" class="row table-responsive">
             <table class="table table-striped table-hover">
                 <thead>
-                    <tr class="table-danger">
+                    <tr class="table-success">
                         <th class="text-nowrap">Nome</th>
                         <th class="text-nowrap">1º Apelido</th>
                         <th class="text-nowrap">2º Apelido</th>
