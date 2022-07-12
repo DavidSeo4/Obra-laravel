@@ -98,7 +98,7 @@
                                         @csrf
                                         {{ method_field('DELETE') }}
 
-                                        <button class="delete border-0 btn-link"
+                                        <button class="delete border-0 btn-link bg-transparent"
                                             onclick="return EliminarRegistro('Eliminar Persoa')">
                                             <svg xmlns="http://www.w3.org/2000/svg" alt="Eliminar rexistro" width="16"
                                                 height="16" fill="currentColor" viewBox="0 0 16 16">

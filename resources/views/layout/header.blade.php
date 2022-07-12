@@ -55,6 +55,16 @@
                     </li>
                 </ul>
 
+
+                 {{--Boton cambio de tamaño fuente--}}
+
+                 <button class="boton" id="boton">
+                    <span><i class="material-icons luna ">text_fields</i>
+                        </i></span>
+                    <span><i class="material-icons sol">format_size</i>
+                        </i></i></span>
+                </button>
+
                 {{-- Botón modo oscuro --}}
 
                 <button class="switch" id="switch">

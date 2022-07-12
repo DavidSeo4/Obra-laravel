@@ -50,7 +50,7 @@ BuleHeader
 }
 
 .switch.active {
-    background: rgb(23, 24, 22);
+    background: rgb(27, 27, 26);
     color: #c1d8f0;
 
 }
@@ -76,12 +76,12 @@ body{
 }
 
 body.dark {
-    background: #1B1B1E
+    background: #1d1d36
 
 }
 
 body.dark div{
-    background: #1B1B1E;
+    background: #191931;
     border: #616872;
 
 }
